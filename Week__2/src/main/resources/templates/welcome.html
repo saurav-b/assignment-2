@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Welcome, <span th:text="${firstname}"></span>!</h2>
+
+    <p>Last Name: <span th:text="${lastname}"></span></p>
+    <p>Email: <span th:text="${email}"></span></p>
+    <p>Phone Number: <span th:text="${phone}"></span></p>
+    <p>Address: <span th:text="${address}"></span></p>
+
+    <a href="/" th:text="'Back to Home'"></a>
+</body>
+</html>
